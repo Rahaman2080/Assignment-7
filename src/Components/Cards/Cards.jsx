@@ -1,9 +1,10 @@
+import PropTypes from 'prop-types';
 import { useEffect, useState } from "react";
 import Cart from "../Cart/Cart";
 import Card from "../Card/Card";
 
 
-const Cards = () => {
+const Cards = ({handleSelectBtn}) => {
     const [cards, setCards] = useState([]);
 
     useEffect(() => {
@@ -14,10 +15,14 @@ const Cards = () => {
 
 
     return (
-        <div className="flex flex-col lg:flex-row md:max-w-5xl lg:max-w-full mx-auto gap-8">
+        <div>
             <div className="grid md:grid-cols-1 lg:grid-cols-3"> 
             {
-                cards.map((card) => <Card key={card.id} card={card}></Card>)
+                cards.map((card) => <Card 
+                key={card.id} 
+                card={card}
+                handleSelectBtn ={handleSelectBtn}
+                ></Card>)
             }
             </div>
             <div>
@@ -27,4 +32,9 @@ const Cards = () => {
     );
 };
 
+Cards.propTypes = {
+    handleSelectBtn: PropTypes.object
+}
 export default Cards;
+
+// className="flex flex-col lg:flex-row md:max-w-5xl lg:max-w-full mx-auto gap-5"
