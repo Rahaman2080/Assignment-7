@@ -8,17 +8,19 @@ function App() {
   const [cardTitle, setCardTitle] = useState([]);
   const [residual, setResidual] = useState(0);
   const [totalHour, setTotalHour] = useState(0);
+  const [totalPrice, setTotalPrice] = useState(0);
   
-
   const handleSelectBtn = card => {
     const isAvailable = cardTitle.find(item=>item.id == card.id);
 
     let totalTime = card.credit_time;
+    let price = card.price;
     if(isAvailable){
       alert("Already selected");
     }else{
       cardTitle.forEach((item) => {
         totalTime = totalTime + item.credit_time;
+        price = price + item.price;
       }); 
 
       const totalRemaining = 20 - totalTime;
@@ -27,9 +29,9 @@ function App() {
       } else{
         setResidual(totalRemaining);
         setTotalHour(totalTime);
+        setTotalPrice(price);
         setCardTitle([...cardTitle, card]);
-      }
-      
+      }  
     }  
   };
   
@@ -43,6 +45,7 @@ function App() {
        cardTitle={cardTitle}
        residual={residual}
        totalHour={totalHour}
+       totalPrice={totalPrice}
        ></Carts>
        </div>
       </div>
