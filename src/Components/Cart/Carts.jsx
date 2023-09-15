@@ -1,18 +1,16 @@
 
 import PropTypes from 'prop-types';
-
-
+import Cart from './Cart';
 
 const Carts = ({cardTitle}) => {
-    // console.log(cardTitle);
     return (
         <div>
             <div className="w-72 h-auto bg-white rounded-md m-4 text-left p-4">
                 <h3 className="text-xl font-bold text-blue-700 text-center py-3"> Hour remaining</h3>
                 <hr className='h-0.5 bg-gray-400'></hr>
-                <h3 className="text-xl font-bold text-center">Course name</h3>
+                <h3 className="text-xl font-bold text-center py-3">Course name</h3>
                 {
-                    cardTitle.map((card)=> <ol key={card.id} className=''>{card.title}</ol> )
+                    cardTitle.map( cart => <Cart key={cart.id} cart={cart}></Cart> )
                 }
                 <hr className='h-0.5 bg-gray-400'></hr>
                 <h3 className='text-xl font-bold text-center py-3'>Total credit hour:</h3>
@@ -21,8 +19,7 @@ const Carts = ({cardTitle}) => {
         </div>
     );
 };
-
 Carts.propTypes = {
-    cardTitle: PropTypes.object.isRequired
+    cardTitle: PropTypes.array
 }
 export default Carts;

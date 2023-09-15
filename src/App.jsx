@@ -9,10 +9,12 @@ function App() {
 
 
   const handleSelectBtn = card => {
+    const isAvailable = cardTitle.find(item=>item.id == card.id);
+    console.log(isAvailable);
+
     setCardTitle([...cardTitle, card]);
   };
-  // console.log(cardTitle);
-
+  
   return (
     <>
       <div className='my-10'>

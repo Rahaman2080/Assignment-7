@@ -1,10 +1,13 @@
 import PropTypes from 'prop-types';
 
-const Cart = () => {
+const Cart = ({cart}) => {
+    const {title} = cart;
     return (
         <>
             <div>
-              
+              <ol className='list-decimal px-3'>
+                <li>{title}</li>
+              </ol>
             </div>
         </>
     );

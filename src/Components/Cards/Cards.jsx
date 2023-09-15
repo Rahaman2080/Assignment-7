@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
 import { useEffect, useState } from "react";
-import Cart from "../Cart/Cart";
 import Card from "../Card/Card";
 
 
@@ -25,16 +24,11 @@ const Cards = ({handleSelectBtn}) => {
                 ></Card>)
             }
             </div>
-            <div>
-            <Cart></Cart>
-            </div>
         </div>
     );
 };
 
 Cards.propTypes = {
-    handleSelectBtn: PropTypes.object
+    handleSelectBtn: PropTypes.func
 }
 export default Cards;
-
-// className="flex flex-col lg:flex-row md:max-w-5xl lg:max-w-full mx-auto gap-5"
