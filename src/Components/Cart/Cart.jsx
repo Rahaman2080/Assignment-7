@@ -5,7 +5,7 @@ const Cart = ({cart}) => {
     return (
         <>
             <div>
-              <ol className='list-decimal px-3'>
+              <ol className='list-decimal px-4'>
                 <li>{title}</li>
               </ol>
             </div>

@@ -6,13 +6,19 @@ import { useState } from 'react';
 
 function App() {
   const [cardTitle, setCardTitle] = useState([]);
+ 
 
 
   const handleSelectBtn = card => {
     const isAvailable = cardTitle.find(item=>item.id == card.id);
-    console.log(isAvailable);
 
-    setCardTitle([...cardTitle, card]);
+    
+    if(isAvailable){
+      alert("Already selected");
+    }else{
+      setCardTitle([...cardTitle, card]);
+      
+    }  
   };
   
   return (
@@ -21,7 +27,10 @@ function App() {
       <h1 className=' font-bold md:text-xl lg:text-3xl text-center'>Course Registration</h1>
        <div className='md:flex max-w-7xl mx-auto gap-5'>
        <Cards handleSelectBtn ={handleSelectBtn}></Cards>
-       <Carts cardTitle={cardTitle}></Carts>
+       <Carts 
+       cardTitle={cardTitle}
+      
+       ></Carts>
        </div>
       </div>
       
