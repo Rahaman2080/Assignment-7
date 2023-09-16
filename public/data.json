@@ -3,7 +3,7 @@
       "id": 1,
       "img": "https://i.ibb.co/2gSgXHD/c-programing.png",
       "title": "C Programming",
-      "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "details": "A C program is a text-based set of instructions written in the C programming language when compiled and executed by a computer.",
       "price": 15000,
       "credit_time": 1
     },
@@ -11,7 +11,7 @@
       "id": 2,
       "img": "https://i.ibb.co/6JtcT1k/algorithm.png",
       "title": "Introduction to Algorithms",
-      "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "details": "Algorithms are precise step-by-step instructions for solving problems, critical in computer science and used for data manipulation and problem-solving.",
       "price": 25000,
       "credit_time": 2
     },
@@ -19,7 +19,7 @@
       "id": 3,
       "img": "https://i.ibb.co/T0rJFZm/c.png",
       "title": "Introduction to C++ for DSA",
-      "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "details": "C++ is a programming language that combines object-oriented programming, making it powerful for developing software, games, and systems.",
       "price": 10000,
       "credit_time": 10
     },
@@ -27,7 +27,7 @@
       "id": 4,
       "img": "https://i.ibb.co/3R8PFcW/data-structure.png",
       "title": "Basic Data Structures",
-      "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "details": "Basic data structures, like arrays and linked lists, organize and store data efficiently.It is complex algorithms and computer programs.",
       "price": 35000,
       "credit_time": 5
     },
@@ -35,7 +35,7 @@
       "id": 5,
       "img": "https://i.ibb.co/MgTFGQQ/python.png",
       "title": "Introduction to OOP Python",
-      "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "details": "Object-Oriented Programming (OOP) in Python is a paradigm that structures code around objects, enabling modular, reusable, and efficient software development.",
       "price": 19000,
       "credit_time": 5
     },
@@ -43,7 +43,7 @@
       "id": 6,
       "img": "https://i.ibb.co/9rnZWnf/software.png",
       "title": "Software Engineering",
-      "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "details": "SE is the systematic and disciplined approach to designing, developing, testing, and maintaining software systems, ensuring they meet quality and functionaliy.",
       "price": 23000,
       "credit_time": 2
     },
@@ -51,7 +51,7 @@
       "id": 7,
       "img": "https://i.ibb.co/tKY15YV/aws.png",
       "title": "AWS, Cloud Computing",
-      "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "details": "AWS (Amazon Web Services) is a top cloud computing platform offering various services. Cloud computing delivers on-demand resources.",
       "price": 35000,
       "credit_time": 5
     },
@@ -59,7 +59,7 @@
       "id": 8,
       "img": "https://i.ibb.co/Ch6cpr8/Rectangle-2.png",
       "title": "Database (MySQL)",
-      "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "details": "MySQL is an open-source relational database management system (RDBMS) known for its speed and reliability, widely used for storing and managing structured data.",
       "price": 19000,
       "credit_time": 5
     },
