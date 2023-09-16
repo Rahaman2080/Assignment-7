@@ -22,6 +22,7 @@ function App() {
         icon: 'error',
         title: 'Sorry...',
         text: 'Already selected this course',
+        timer: 3000
       })
     }else{
       cardTitle.forEach((item) => {
