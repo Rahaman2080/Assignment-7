@@ -23,8 +23,8 @@ const Carts = ({cardTitle, residual, totalHour,totalPrice}) => {
 };
 Carts.propTypes = {
     cardTitle: PropTypes.array,
-    residual: PropTypes.object,
-    totalHour: PropTypes.object,
-    totalPrice: PropTypes.object
+    residual: PropTypes.number,
+    totalHour: PropTypes.number,
+    totalPrice: PropTypes.number
 }
 export default Carts;

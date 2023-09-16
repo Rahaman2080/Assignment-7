@@ -3,6 +3,7 @@ import './App.css'
 import Cards from './Components/Cards/Cards'
 import Carts from './Components/Cart/Carts';
 import { useState } from 'react';
+import Swal from 'sweetalert2'
 
 function App() {
   const [cardTitle, setCardTitle] = useState([]);
@@ -15,9 +16,13 @@ function App() {
 
     let totalTime = card.credit_time;
     let price = card.price;
-    
+
     if(isAvailable){
-      alert("Already selected");
+      Swal.fire({
+        icon: 'error',
+        title: 'Sorry...',
+        text: 'Already selected this course',
+      })
     }else{
       cardTitle.forEach((item) => {
         totalTime = totalTime + item.credit_time;
@@ -26,7 +31,13 @@ function App() {
 
       const totalRemaining = 20 - totalTime;
       if(totalTime > 20){
-        return alert('Maximum time is not allowed')
+        return Swal.fire({
+          position: 'top-end',
+          icon: 'info',
+          title: 'Maximum time is not allowed',
+          showConfirmButton: false,
+          timer: 2000
+        })
       } else{
         setResidual(totalRemaining);
         setTotalHour(totalTime);
