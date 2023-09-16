@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import { useEffect, useState } from "react";
 import Card from "../Card/Card";
 
-
 const Cards = ({handleSelectBtn}) => {
     const [cards, setCards] = useState([]);
 
@@ -11,7 +10,6 @@ const Cards = ({handleSelectBtn}) => {
         .then(res => res.json())
         .then(data => setCards(data))
     }, []);
-
 
     return (
         <div>

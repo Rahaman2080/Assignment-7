@@ -1,10 +1,9 @@
 import PropTypes from 'prop-types';
 
-
 const Card = ({card, handleSelectBtn}) => {
     const {img, title, details, price, credit_time} = card;
     return (
-        <div className="w-72 h-96 rounded-md mx-2 p-3 bg-white text-center">
+        <div className="w-72 h-96 rounded-md mx-2 p-3 bg-white text-center m-2">
                 <div className="space-y-4">
                     <img className="w-full rounded-md" src={img} alt="" />
                     <h4 className="font-bold text-lg">{title}</h4>
