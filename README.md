@@ -1,6 +1,6 @@
 # Answer:
 
--  Dynamic web SPA
+-  Dynamic web SP
 -  fast refresh
 -  Sweet alert
 
